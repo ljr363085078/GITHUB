@@ -10,3 +10,5 @@ D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.csproj.CoreComp
 D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.csproj.CopyComplete
 D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.dll
 D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.pdb
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.Ribbon_VSTO.resources
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\bin\Debug\ExcelAddIn_VSTO.dll.config

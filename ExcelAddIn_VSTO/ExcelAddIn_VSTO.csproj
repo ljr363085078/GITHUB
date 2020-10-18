@@ -156,6 +156,7 @@
     can be found.
   -->
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -167,7 +168,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Ribbon_VSTO.resx">
+      <DependentUpon>Ribbon_VSTO.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="ExcelAddIn_VSTO_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -176,6 +182,13 @@
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Ribbon_VSTO.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ribbon_VSTO.Designer.cs">
+      <DependentUpon>Ribbon_VSTO.cs</DependentUpon>
     </Compile>
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
