@@ -23,7 +23,21 @@ namespace ExcelAddIn_VSTO
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
         {
         }
-        
+        private void Application_SheetSelectionChange(object Sh, Range Target)
+        {
+            //throw new NotImplementedException();
+            if (Properties.Settings.Default.if_jgd_open == true)
+            {
+                ExcelApp.Cells.Interior.ColorIndex = 0;
+                Range target = Globals.ThisAddIn.Application.Selection;
+                if (target.Count > 1)
+                {
+                    target = target.Cells[1];
+                }
+                target.EntireColumn.Interior.ColorIndex = 6;
+                target.EntireRow.Interior.ColorIndex = 6;
+            }
+        }
         #region VSTO 生成的代码
 
         /// <summary>
@@ -36,23 +50,6 @@ namespace ExcelAddIn_VSTO
             this.Shutdown += new System.EventHandler(ThisAddIn_Shutdown);
             Globals.ThisAddIn.Application.SheetSelectionChange += Application_SheetSelectionChange;
         }
-
-        private void Application_SheetSelectionChange(object Sh, Range Target)
-        {
-            //throw new NotImplementedException();
-            if (Properties.Settings.Default.if_jgd_open == true) 
-            {
-                ExcelApp.Cells.Interior.ColorIndex = 0;
-                Range target = Globals.ThisAddIn.Application.Selection;
-                if (target.Count > 1)
-                {
-                    target = target.Cells[1];
-                }
-                target.EntireColumn.Interior.ColorIndex = 6;
-                target.EntireRow.Interior.ColorIndex = 6;
-            }
-        }
-
         #endregion
     }
 }
