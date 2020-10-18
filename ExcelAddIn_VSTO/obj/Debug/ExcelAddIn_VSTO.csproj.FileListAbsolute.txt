@@ -1,0 +1,12 @@
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\bin\Debug\ExcelAddIn_VSTO.dll
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\bin\Debug\ExcelAddIn_VSTO.pdb
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\bin\Debug\ExcelAddIn_VSTO.dll.manifest
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\bin\Debug\ExcelAddIn_VSTO.vsto
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.csprojAssemblyReference.cache
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.Properties.Resources.resources
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.csproj.GenerateResource.cache
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.csproj.CoreCompileInputs.cache
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.csproj.CopyComplete
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.dll
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.pdb

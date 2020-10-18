@@ -1,0 +1,10 @@
+D:\VisualStudio\GITHUB\SecurityReg\bin\Debug\SecurityReg.exe.config
+D:\VisualStudio\GITHUB\SecurityReg\bin\Debug\SecurityReg.exe
+D:\VisualStudio\GITHUB\SecurityReg\bin\Debug\SecurityReg.pdb
+D:\VisualStudio\GITHUB\SecurityReg\obj\Debug\SecurityReg.csprojAssemblyReference.cache
+D:\VisualStudio\GITHUB\SecurityReg\obj\Debug\SecurityReg.Form1.resources
+D:\VisualStudio\GITHUB\SecurityReg\obj\Debug\SecurityReg.Properties.Resources.resources
+D:\VisualStudio\GITHUB\SecurityReg\obj\Debug\SecurityReg.csproj.GenerateResource.cache
+D:\VisualStudio\GITHUB\SecurityReg\obj\Debug\SecurityReg.csproj.CoreCompileInputs.cache
+D:\VisualStudio\GITHUB\SecurityReg\obj\Debug\SecurityReg.exe
+D:\VisualStudio\GITHUB\SecurityReg\obj\Debug\SecurityReg.pdb
