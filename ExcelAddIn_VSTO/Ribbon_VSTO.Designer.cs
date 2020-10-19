@@ -34,6 +34,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher ribbonDialogLauncherImpl1 = this.Factory.CreateRibbonDialogLauncher();
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group1 = this.Factory.CreateRibbonGroup();
             this.button1 = this.Factory.CreateRibbonButton();
@@ -50,9 +51,11 @@
             // 
             // group1
             // 
+            this.group1.DialogLauncher = ribbonDialogLauncherImpl1;
             this.group1.Items.Add(this.button1);
             this.group1.Label = "group1";
             this.group1.Name = "group1";
+            this.group1.DialogLauncherClick += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.group1_DialogLauncherClick);
             // 
             // button1
             // 

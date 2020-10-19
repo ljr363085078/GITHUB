@@ -27,5 +27,11 @@ namespace ExcelAddIn_VSTO
                 Globals.ThisAddIn.Application.Cells.Interior.ColorIndex = 0;
             }
         }
+
+        private void group1_DialogLauncherClick(object sender, RibbonControlEventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
+        }
     }
 }

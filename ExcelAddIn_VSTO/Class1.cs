@@ -8,6 +8,5 @@ namespace ExcelAddIn_VSTO
 {
     class Class1
     {
-        public bool jgd = false;
     }
 }
