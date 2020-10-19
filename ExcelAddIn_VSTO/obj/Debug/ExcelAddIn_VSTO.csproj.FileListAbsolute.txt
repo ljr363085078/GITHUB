@@ -27,3 +27,5 @@ F:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.csproj.CopyComp
 F:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.dll
 F:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.pdb
 F:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.Form1.resources
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.Form1.resources
+D:\VisualStudio\GITHUB\ExcelAddIn_VSTO\obj\Debug\ExcelAddIn_VSTO.UserControl1.resources

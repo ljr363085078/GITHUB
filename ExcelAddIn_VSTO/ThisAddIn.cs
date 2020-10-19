@@ -7,6 +7,7 @@ using Excel = Microsoft.Office.Interop.Excel;
 using Office = Microsoft.Office.Core;
 using Microsoft.Office.Tools.Excel;
 using Microsoft.Office.Interop.Excel;
+using System.Windows.Forms;
 
 namespace ExcelAddIn_VSTO
 {
@@ -18,7 +19,9 @@ namespace ExcelAddIn_VSTO
         {
             ExcelApp = Globals.ThisAddIn.Application;      //获取到加载项所在Excel应用程序
             //ExcelApp.ActiveCell.Value = "11";        //测试給活动单元格输入新的值    
-
+            UserControl1 userControl1 = new UserControl1();
+            Share.task1 = Globals.ThisAddIn.CustomTaskPanes.Add(userControl1, "工作表导航");
+            Share.task1.Visible = true;
         }
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
         {

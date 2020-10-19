@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ExcelAddIn_VSTO
 {
-    class Class1
+    public static class Share
     {
+        public static Microsoft.Office.Tools.CustomTaskPane task1;
     }
 }
