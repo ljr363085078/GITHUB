@@ -42,7 +42,32 @@ namespace ExcelAddIn_VSTO
 
         private void toggleButton1_Click(object sender, RibbonControlEventArgs e)
         {
+            Share.task1.Visible = this.toggleButton1.Checked;
+        }
 
+        private void button1_Click_1(object sender, RibbonControlEventArgs e)
+        {
+            Share.task1.DockPosition = Microsoft.Office.Core.MsoCTPDockPosition.msoCTPDockPositionLeft;
+        }
+
+        private void button2_Click(object sender, RibbonControlEventArgs e)
+        {
+            Share.task1.DockPosition = Microsoft.Office.Core.MsoCTPDockPosition.msoCTPDockPositionRight;
+        }
+
+        private void button3_Click(object sender, RibbonControlEventArgs e)
+        {
+            Share.task1.DockPosition = Microsoft.Office.Core.MsoCTPDockPosition.msoCTPDockPositionTop;
+        }
+
+        private void button4_Click(object sender, RibbonControlEventArgs e)
+        {
+            Share.task1.DockPosition = Microsoft.Office.Core.MsoCTPDockPosition.msoCTPDockPositionBottom;
+        }
+
+        private void button5_Click(object sender, RibbonControlEventArgs e)
+        {
+            Share.task1.DockPosition = Microsoft.Office.Core.MsoCTPDockPosition.msoCTPDockPositionFloating;
         }
     }
 }

@@ -42,11 +42,11 @@
             this.button_jgd = this.Factory.CreateRibbonButton();
             this.toggleButton1 = this.Factory.CreateRibbonToggleButton();
             this.group3 = this.Factory.CreateRibbonGroup();
-            this.button1 = this.Factory.CreateRibbonButton();
-            this.button2 = this.Factory.CreateRibbonButton();
-            this.button3 = this.Factory.CreateRibbonButton();
-            this.button4 = this.Factory.CreateRibbonButton();
-            this.button5 = this.Factory.CreateRibbonButton();
+            this.button_left = this.Factory.CreateRibbonButton();
+            this.button_right = this.Factory.CreateRibbonButton();
+            this.button_up = this.Factory.CreateRibbonButton();
+            this.button_down = this.Factory.CreateRibbonButton();
+            this.button_floating = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             this.group2.SuspendLayout();
@@ -100,48 +100,53 @@
             // 
             // group3
             // 
-            this.group3.Items.Add(this.button1);
-            this.group3.Items.Add(this.button2);
-            this.group3.Items.Add(this.button3);
-            this.group3.Items.Add(this.button4);
-            this.group3.Items.Add(this.button5);
+            this.group3.Items.Add(this.button_left);
+            this.group3.Items.Add(this.button_right);
+            this.group3.Items.Add(this.button_up);
+            this.group3.Items.Add(this.button_down);
+            this.group3.Items.Add(this.button_floating);
             this.group3.Label = "任务窗格停靠位置";
             this.group3.Name = "group3";
             // 
-            // button1
+            // button_left
             // 
-            this.button1.Label = "button1";
-            this.button1.Name = "button1";
-            this.button1.OfficeImageId = "L";
-            this.button1.ShowImage = true;
+            this.button_left.Label = "左";
+            this.button_left.Name = "button_left";
+            this.button_left.OfficeImageId = "L";
+            this.button_left.ShowImage = true;
+            this.button_left.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button1_Click_1);
             // 
-            // button2
+            // button_right
             // 
-            this.button2.Label = "button2";
-            this.button2.Name = "button2";
-            this.button2.OfficeImageId = "R";
-            this.button2.ShowImage = true;
+            this.button_right.Label = "右";
+            this.button_right.Name = "button_right";
+            this.button_right.OfficeImageId = "R";
+            this.button_right.ShowImage = true;
+            this.button_right.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button2_Click);
             // 
-            // button3
+            // button_up
             // 
-            this.button3.Label = "button3";
-            this.button3.Name = "button3";
-            this.button3.OfficeImageId = "U";
-            this.button3.ShowImage = true;
+            this.button_up.Label = "上";
+            this.button_up.Name = "button_up";
+            this.button_up.OfficeImageId = "U";
+            this.button_up.ShowImage = true;
+            this.button_up.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button3_Click);
             // 
-            // button4
+            // button_down
             // 
-            this.button4.Label = "button4";
-            this.button4.Name = "button4";
-            this.button4.OfficeImageId = "D";
-            this.button4.ShowImage = true;
+            this.button_down.Label = "下";
+            this.button_down.Name = "button_down";
+            this.button_down.OfficeImageId = "D";
+            this.button_down.ShowImage = true;
+            this.button_down.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button4_Click);
             // 
-            // button5
+            // button_floating
             // 
-            this.button5.Label = "button5";
-            this.button5.Name = "button5";
-            this.button5.OfficeImageId = "F";
-            this.button5.ShowImage = true;
+            this.button_floating.Label = "浮动";
+            this.button_floating.Name = "button_floating";
+            this.button_floating.OfficeImageId = "F";
+            this.button_floating.ShowImage = true;
+            this.button_floating.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button5_Click);
             // 
             // Ribbon_VSTO
             // 
@@ -170,11 +175,11 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group2;
         internal Microsoft.Office.Tools.Ribbon.RibbonToggleButton toggleButton1;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group3;
-        internal Microsoft.Office.Tools.Ribbon.RibbonButton button1;
-        internal Microsoft.Office.Tools.Ribbon.RibbonButton button2;
-        internal Microsoft.Office.Tools.Ribbon.RibbonButton button3;
-        internal Microsoft.Office.Tools.Ribbon.RibbonButton button4;
-        internal Microsoft.Office.Tools.Ribbon.RibbonButton button5;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button_left;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button_right;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button_up;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button_down;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button_floating;
     }
 
     partial class ThisRibbonCollection
