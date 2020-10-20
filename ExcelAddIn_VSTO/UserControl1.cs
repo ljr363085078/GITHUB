@@ -29,6 +29,7 @@ namespace ExcelAddIn_VSTO
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //列表框的单击事件，单击任一条目，excel会自动激活对应的工作表
             Globals.ThisAddIn.Application.ActiveWorkbook.Worksheets[this.listBox1.Text].Activate();
         }
     }
