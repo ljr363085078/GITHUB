@@ -37,9 +37,9 @@
             Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher ribbonDialogLauncherImpl1 = this.Factory.CreateRibbonDialogLauncher();
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group1 = this.Factory.CreateRibbonGroup();
-            this.group2 = this.Factory.CreateRibbonGroup();
-            this.checkBox1 = this.Factory.CreateRibbonCheckBox();
             this.button_jgd = this.Factory.CreateRibbonButton();
+            this.checkBox1 = this.Factory.CreateRibbonCheckBox();
+            this.group2 = this.Factory.CreateRibbonGroup();
             this.toggleButton1 = this.Factory.CreateRibbonToggleButton();
             this.group3 = this.Factory.CreateRibbonGroup();
             this.button_left = this.Factory.CreateRibbonButton();
@@ -71,18 +71,6 @@
             this.group1.Name = "group1";
             this.group1.DialogLauncherClick += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.group1_DialogLauncherClick);
             // 
-            // group2
-            // 
-            this.group2.Items.Add(this.toggleButton1);
-            this.group2.Label = "可见性";
-            this.group2.Name = "group2";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.Label = "聚光灯";
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.checkBox1_Click);
-            // 
             // button_jgd
             // 
             this.button_jgd.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
@@ -91,6 +79,18 @@
             this.button_jgd.OfficeImageId = "Call";
             this.button_jgd.ShowImage = true;
             this.button_jgd.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button1_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.Label = "聚光灯";
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.checkBox1_Click);
+            // 
+            // group2
+            // 
+            this.group2.Items.Add(this.toggleButton1);
+            this.group2.Label = "可见性";
+            this.group2.Name = "group2";
             // 
             // toggleButton1
             // 

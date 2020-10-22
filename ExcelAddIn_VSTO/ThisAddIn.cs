@@ -19,10 +19,24 @@ namespace ExcelAddIn_VSTO
         {
             ExcelApp = Globals.ThisAddIn.Application;      //获取到加载项所在Excel应用程序
             //ExcelApp.ActiveCell.Value = "11";        //测试給活动单元格输入新的值    
-            UserControl1 userControl1 = new UserControl1();
+            UserControl1 userControl1 = new UserControl1();     //任务栏窗格实例化
             Share.task1 = Globals.ThisAddIn.CustomTaskPanes.Add(userControl1, "工作表导航");
             Share.task1.Visible = true;
+            Share.task1.VisibleChanged += new EventHandler(Task1_VisibleChanged);
+            Share.task1.DockPositionChanged += Task1_DockPositionChanged;
         }
+
+        private void Task1_DockPositionChanged(object sender, EventArgs e)
+        {
+            Globals.ThisAddIn.Application.StatusBar = Share.task1.DockPosition.ToString();      //任务窗格改变位置时在excel的状态栏显示位置描述
+        }
+
+        private void Task1_VisibleChanged(object sender, EventArgs e)
+        {
+            Ribbon_VSTO ribbon = Globals.Ribbons.GetRibbon<Ribbon_VSTO>();      //获取功能区可视化设计器中的ribbon
+            ribbon.toggleButton1.Checked = Share.task1.Visible;
+        }
+
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
         {
         }
